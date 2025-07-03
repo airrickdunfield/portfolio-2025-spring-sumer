@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 import "./Header.scss"
 
 function Header() {
@@ -7,11 +9,10 @@ function Header() {
             <div className="container">
                 <div className="flex space-between">
                     <div>logo</div>
-                    <nav class="main-menu">
+                    <nav className="main-menu">
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Projects</a></li>
-                            <li><a href="#">About</a></li>
+                            <li><Link to="/">Home</Link></li>
+                            <li><Link to="/about">About</Link></li>
                         </ul>
                     </nav>
                 </div>

@@ -1,3 +1,14 @@
+/* CSS Footer to Bottom */
+#root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
+
 /* Grid System */
 .container {
     max-width: 80rem; /* Maximum width of the website's grid - 1280 */
@@ -78,3 +89,4 @@
 /* Utility Classes */
 .flex { display: flex; }
 .space-between { justify-content: space-between; }
+.space-around {justify-content: space-around; }

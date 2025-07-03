@@ -1,13 +1,21 @@
-import Header from "./components/global/Header";
+import { Routes, Route } from "react-router";
+
+// Page Container
+import SiteWrapper from "./components/global/SiteWrapper"
+
+// Pages
+import Home from "./components/pages/Home";
+import About from "./components/pages/About";
 
 function App() {
 
   return (
-    <>
-      <Header />
-      <h1>I am the app page</h1>
-      <h2>I love to code</h2>
-    </>
+    <Routes>
+      <Route path="/" element={<SiteWrapper />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Route>
+    </Routes>
   )
 }
 
